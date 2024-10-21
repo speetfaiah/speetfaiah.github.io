@@ -4,109 +4,117 @@
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
      <title>Evgenii Solovev</title>
      <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; height: 225px; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        body { font-size: 14px; font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;  }
+        .pic { width: 150px; }
+        h1 { margin: 0 0 10px 0; font-size: 30px; }
+        h2 { font-size: 20px; margin: 5px 0 5px 0; position: relative; }
+        h2 span { font-size: 16px; color: #999; font-weight: normal; margin-left: 10px; }
 		h3 { font-size: 17px; margin: 0 0 6px 0; position: relative; }
-        p { margin: 0 0 16px 0; }
+        p { margin: 0 0 15px 0; }
         a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 75px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-		@media screen { .print { display: block; text-align: center; } }
-		@media print { .print { display: none; } }
-		.print a { padding: 0.5rem 1rem; font-size: 1.25rem; border-radius: 0.3rem; border: 1px solid #999; }
+        ul { margin: 0 0 15px 10px; padding: 0 0 0 15px; }
+
+		@media screen {
+			.page-wrap { margin: 40px auto 60px; }
+			.print { display: block; text-align: center; }
+			.print a { border: none; padding: 5px 16px; color: #000; box-shadow: 6px 6px 0 0 #000; background-color: #fefc4f; }
+		}
+		@media print {
+			.print { display: none; }
+			.page-wrap { margin: 0; }
+		}
+
+		section { margin: 5px 10px; }
+		article { margin: 0 15px; }
+		article.head { text-align: center; }
+		.info article { display: inline-block; vertical-align:top; }
+		.strong { font-weight: bold; }
      </style>
 </head>
 <body>
-    <div id="page-wrap">
-		<p class="print"><a href="javascript:if(window.print)window.print()">Print CV</a></p>
-		<img src="images/photo.jpg" alt="Evgenii Solovev" id="pic">
-        <div>
-            <h1 class="fn">Evgenii Solovev</h1>     
-            <p>
-                <strong>Position:</strong> Senior Software Developer<br />
-				<strong>Current Location:</strong> Almaty, Kazakhstan<br />
-				<strong>Looking For:</strong> Full-time or Remote job with relocation<br />
-				<strong>Languages:</strong> Russian (native), English (B1)<br />
-				<strong>Salary:</strong> Ready to discuss<br />
-				<strong>LinkedIn:</strong> <a href="https://linkedin.com/in/speetfaiah">https://linkedin.com/in/speetfaiah</a><br />
-                <strong>Telegram:</strong> <a href="https://t.me/speetfaiah">https://t.me/speetfaiah</a>
-            </p>
-        </div> 
-        <div id="objective">
-            <p></p>
-        </div>       
-        <div class="clear"></div>      
-        <dl>
-            <dd class="clear"></dd>
-            <dt>Experience</dt>
-            <dd>
-                <h2>Tinkoff Bank<span>Almaty, Kazakhstan (September 2020 - Present)</span></h2>
-				<h3>Senior Software Developer</h3>
-                <ul>
-                    <li>Designing and implementing high-load backend solutions (cloud telephony services)</li>
-                    <li>Analysis, decomposition and planning</li>
-                    <li>Code reviewing</li>
-                    <li>Debugging, troubleshooting and optimizing application performance</li>
-                    <li>Testing the applications with unitary and integration tests</li>
-                </ul>
-                <h2>Beeline Russia<span>Moscow, Russia (January 2018 - August 2020)</span></h2>
-				<h3>Senior Software Developer</h3>
-                <ul>
-                    <li>Designing and implementing backend solutions (beeline.ru, backend to mobile app "My Beeline", authorization services)</li>
-                    <li>Analysis, decomposition and planning</li>
-                    <li>Code reviewing</li>
-                    <li>Debugging, troubleshooting and optimizing application performance</li>
-                </ul>
-				<h2>SimbirSoft<span>Ulyanovsk, Russia (April 2017 - December 2017)</span></h2>
-				<h3>Middle Software Developer</h3>
-                <ul>
-                    <li>Implementing web-applications and services</li>
-                    <li>Analysis, decomposition and planning</li>
-                </ul>
-				<h2>PROMO<span>Ulyanovsk, Russia (October 2014 - March 2017)</span></h2>
-				<h3>Software Developer</h3>
-                <ul>
-                    <li>Creating and editing custom modules for e-commerce solutions based on AdvantShop platform</li>
-                    <li>Frontend-development</li>
-                    <li>Maintaining and supporting applications on Windows Server</li>
-                </ul>
-            </dd>      
-            <dd class="clear"></dd>
-            <dt>Skills</dt>
-            <dd>
-                <h2>Technologies</h2>
+    <div class="page-wrap">
+		<p class="print"><a href="javascript:if(window.print)window.print()">Print</a></p>
+		<section class="info">
+			<article>
+				<img src="images/photo.jpg" alt="Evgenii Solovev" class="pic">
+			</article>
+			<article>
+				<h1>Evgenii Solovev</h1>
+				<span class="strong">Position:</span> Senior Software Developer<br />
+				<span class="strong">Stack:</span> .NET (switching is ready to consider)<br />
+				<span class="strong">Current Location:</span> Almaty, Kazakhstan<br />
+				<span class="strong">Looking For:</span> Full-time or Remote job<br />
+				<span class="strong">Languages:</span> Russian (native), English (B1)<br />
+				<span class="strong">LinkedIn:</span> <a href="https://linkedin.com/in/speetfaiah">https://linkedin.com/in/speetfaiah</a><br />
+				<span class="strong">Telegram:</span> <a href="https://t.me/speetfaiah">https://t.me/speetfaiah</a>
+			</article>
+		</section>
+		<section>
+			<article class="head">
+				<h2>Experience</h2>
+			</article>
+			<article>
+				<h2>Tinkoff Bank<span>Almaty, KZ (Sept. 2020 - Present)</span></h2>
 				<ul>
-                    <li>C# (.NET 4.5/Core/5/6) with proficiency in ASP.NET (Core/WebApi/MVC)</li>
-                    <li>TypeScript/JavaScript (Electron, jQuery, React, AngularJS), HTML, CSS</li>
-                    <li>Oracle (EF, Stored Procedures), MS SQL (Dapper, EF), PostgreSQL (EF)</li>
-                    <li>RabbitMQ, Redis, WebSockets, Kafka, gRPC</li>
-                </ul>           
-                <h2>Tools</h2>
-                <p>Visual Studio, Git (TFS, Bitbucket, GitLab), SVN, Jira, Confluence, TeamCity, Octopus, Kibana, Grafana, Prometheus, Consul, Vault, S3</p>
-            </dd>
-            <dd class="clear"></dd>
-			<dt>Education</dt>
-            <dd>
-                <h2>Ulyanovsk State Technical University <span>Ulyanovsk, Russia (2011 - 2015)</span></h2>
-                <p>Bachelor's degree, Information Systems and Technologies</p>
-                <h2>Microsoft Certified Professional <span>(October 2017 - October 2019)</span></h2>
-                <p>Credential ID G405-7161</p>
-            </dd> 
-            <dd class="clear"></dd>
-        </dl>
-        <div class="clear"></div>
-		<p class="print"><a href="javascript:if(window.print)window.print()">Print CV</a></p>
+					<li>Designing and implementing high-load cloud telephony services (web-apps and services)</li>
+					<li>Analysis, decomposition and planning</li>
+					<li>Code reviewing</li>
+					<li>Debugging, troubleshooting; optimizing application performance</li>
+					<li>Unit- and intergration testing</li>
+					<li>Deploying production services</li>
+					<li>Third line supporting</li>
+				</ul>
+				<h2>Beeline Russia<span>Moscow, RU (Jan. 2018 - Aug. 2020)</span></h2>
+				<ul>
+					<li>Designing and implementing backend of beeline.ru and mobile app "My Beeline", authorization services</li>
+					<li>Analysis, decomposition and planning</li>
+					<li>Code reviewing</li>
+					<li>Debugging, troubleshooting; optimizing application performance</li>
+					<li>Unit-testing</li>
+					<li>Third line supporting</li>
+				</ul>
+				<h2>SimbirSoft<span>Ulyanovsk, RU (Apr. 2017 - Dec. 2017)</span></h2>
+				<ul>
+					<li>Implementing web-apps and services</li>
+					<li>Analysis, decomposition and planning</li>
+				</ul>
+				<h2>PROMO<span>Ulyanovsk, RU (Oct. 2014 - Mar. 2017)</span></h2>
+				<ul>
+					<li>Creating and editing custom modules for e-commerce solutions based on AdvantShop platform</li>
+					<li>Frontend-development</li>
+					<li>Maintaining applications on Windows Server</li>
+				</ul>
+			</article>
+		</section>
+		<section>
+			<article class="head">
+				<h2>Skills</h2>
+			</article>
+			<article>
+				<h2>Technologies</h2>
+				<ul>
+					<li>C# with proficiency in ASP.NET</li>
+					<li>TypeScript/JavaScript (Electron, React, AngularJS), HTML, CSS</li>
+					<li>PostgreSQL, Oracle, MS SQL</li>
+					<li>RabbitMQ, Kafka, Redis, WebSockets, gRPC, WebRTC, ZooKeeper</li>
+				</ul>
+				<h2>Tools</h2>
+				<p>Rider, Git, Jira, Confluence, GitLab, TeamCity, Octopus, Kibana, Grafana, Prometheus, Consul, Vault, S3</p>
+			</article>
+		</section>
+		<section>
+			<article class="head">
+				<h2>Education</h2>
+			</article>
+			<article>
+				<h2>UlSTU<span>Ulyanovsk, RU (2011 - 2015)</span></h2>
+				<p>Bachelor's degree, Information Systems and Technologies</p>
+				<h2>Microsoft Certified Professional<span>(Oct. 2017 - Oct. 2019)</span></h2>
+				<p>Credential ID G405-7161</p>
+			</article>
+		</section>
+		<p class="print"><a href="javascript:if(window.print)window.print()">Print</a></p>
     </div>
 </body>
 </html>
